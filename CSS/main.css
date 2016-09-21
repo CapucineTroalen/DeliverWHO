@@ -1,0 +1,175 @@
+/* General Styling : Wrapper, Titles */
+
+.wrapper {
+	font-family: Lora, serif;
+	color: #5a5a5a;
+	width: 85%;
+	margin: auto;
+}
+
+h1 { 
+	margin-top: 0; 
+}
+
+.titleh2,
+h2 {
+	color: #323232;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+/* Top of the Page Styling */
+
+header {
+	font-family: Lora, serif;
+	color: #bfbfbf;
+	background-color: #323232;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.intro {
+	border-bottom: solid 4px #323232;
+	border-bottom-width: 0.5em;
+	margin-bottom: 3px;
+	text-align: center;
+	color: #bfbfbf;
+}
+/* Form Styling */
+
+.maincontent {
+	border-top: solid 1px #323232;	
+	margin: auto;
+	
+}
+
+.contact {
+	border-bottom: solid 1px #323232;	
+	margin: auto;
+	margin: 10px 0;
+}
+
+fieldset {
+	border: none;
+}
+
+/* Form Boxes styling */ 
+.contact label,
+.contact input,
+.contact select {
+	display: block;
+	width: 100%;
+	border: none;
+}
+
+.contact input, 
+.contact select,
+.newsletter textarea {
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	height: 45px;
+}
+
+.newsletter textarea {
+	border:none;
+}
+
+.contact label {
+	margin: 20px 0 10px 0;
+}
+
+.newsletter input,
+.newsletter label {
+	margin-bottom: 15px;
+}
+
+[placeholder] {
+	text-align: right;
+	font-size: 0.9em;
+	font-weight: lighter;
+	font-style: italic;
+
+}
+
+:checked {
+	background: #000059;
+}
+
+#othertopics {
+	width: 100%;
+	height: 100px;
+	border: 0;
+	margin-top: 15px;
+}
+
+#placeholder {
+	font-size: 0.9em;
+	font-weight: lighter;
+	font-style: normal;
+}
+
+/* Submit Button styling */
+
+input[type="submit"] {
+	font-family: Lora, serif;
+	color: #fff;
+	background-color: #16b89c;
+	display: block;
+	margin : auto;
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	width: 100%;
+	padding: 7px;
+	border: 0
+}
+
+/* Footer styling */
+
+footer {
+	text-align: center;
+	color: #bfbfbf;
+	font-style: italic;
+	width: 90%;
+}
+
+/* Media Queries */
+
+@media (min-width: 760px) {
+	.wrapper {
+		width: 80%;
+	}
+	
+	.main-content,
+	.newsletter {
+		width: 100%;
+	}
+	
+	.contact label,
+	.contact input, 
+	.contact select {
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	
+	.contact label {
+		width : 16%;
+	}
+	
+	.contact input, 
+	.contact select
+		{
+			width: 82%;
+			margin: auto;
+		}
+		
+	input[type="submit"] {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	footer {
+		margin: auto;
+	}
+	 
+}
