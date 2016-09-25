@@ -1,26 +1,28 @@
 /* General Styling : Wrapper, Titles */
 
 .wrapper {
-	font-family: Lora, serif;
+	font-family: Dosis, serif;
 	color: #5a5a5a;
 	width: 85%;
 	margin: auto;
 }
 
 h1 { 
-	margin-top: 0; 
+	margin-top: 10;
+	font-size: 3em;
 }
 
 .titleh2,
 h2 {
 	color: #323232;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-weight: bold;
+	font-family:'Yatra One', serif;
 }
 /* Top of the Page Styling */
 
 header {
-	font-family: Lora, serif;
+	font-family:'Yatra One', serif; 
 	color: #bfbfbf;
 	background-color: #323232;
 	text-transform: uppercase;
@@ -44,75 +46,58 @@ header {
 	
 }
 
-.contact {
-	border-bottom: solid 1px #323232;	
+.commande {
 	margin: auto;
 	margin: 10px 0;
 }
 
-fieldset {
-	border: none;
+.submit {
+	border : none;
 }
 
 /* Form Boxes styling */ 
-.contact label,
-.contact input,
-.contact select {
+.commande label,
+.commande input,
+.commande select {
 	display: block;
 	width: 100%;
 	border: none;
 }
 
-.contact input, 
-.contact select,
-.newsletter textarea {
+.commande input, 
+.commande select,
+.commande textarea {
 	background-color: #e5e5e5;
 	border-radius: 5px;
 	height: 45px;
 }
 
-.newsletter textarea {
+.commande textarea {
 	border:none;
 }
 
-.contact label {
+.commande label {
 	margin: 20px 0 10px 0;
 }
 
-.newsletter input,
-.newsletter label {
-	margin-bottom: 15px;
+.commande input,
+.commande label {
+	margin-bottom: 0px;
 }
 
-[placeholder] {
-	text-align: right;
-	font-size: 0.9em;
-	font-weight: lighter;
-	font-style: italic;
 
-}
-
-:checked {
-	background: #000059;
-}
-
-#othertopics {
+#accompagnement1, #accompagnement2, #accompagnement3  {
 	width: 100%;
 	height: 100px;
 	border: 0;
-	margin-top: 15px;
+	margin-top: -10px;
 }
 
-#placeholder {
-	font-size: 0.9em;
-	font-weight: lighter;
-	font-style: normal;
-}
 
 /* Submit Button styling */
 
 input[type="submit"] {
-	font-family: Lora, serif;
+	font-family: 'Yatra One', serif;
 	color: #fff;
 	background-color: #16b89c;
 	display: block;
@@ -122,15 +107,6 @@ input[type="submit"] {
 	width: 100%;
 	padding: 7px;
 	border: 0
-}
-
-/* Footer styling */
-
-footer {
-	text-align: center;
-	color: #bfbfbf;
-	font-style: italic;
-	width: 90%;
 }
 
 /* Media Queries */
@@ -145,19 +121,19 @@ footer {
 		width: 100%;
 	}
 	
-	.contact label,
-	.contact input, 
-	.contact select {
+	.commande label,
+	.commande input, 
+	.commande select {
 		display: inline-block;
 		margin-bottom: 30px;
 	}
 	
-	.contact label {
+	.commande label {
 		width : 16%;
 	}
 	
-	.contact input, 
-	.contact select
+	.commande input, 
+	.commande select
 		{
 			width: 82%;
 			margin: auto;
@@ -166,10 +142,6 @@ footer {
 	input[type="submit"] {
 		margin-top: 20px;
 		width: 100%;
-	}
-
-	footer {
-		margin: auto;
 	}
 	 
 }

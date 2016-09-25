@@ -6,7 +6,7 @@
 	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	     <link rel="stylesheet" href="css/normalize.css">
 	     <link rel="stylesheet" href="css/main.css">
-		 <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+		 <link href="https://fonts.googleapis.com/css?family=Dosis|Yatra+One" rel="stylesheet">
 	</head>
 <body>
 	
@@ -14,13 +14,13 @@
 			<h1>Deliver-WHO ?</h1>
 		</header>
 		
-		<div class="wrapper">
+		<div class="wrapper maincontent">
 		<div class="intro">
 			<h2> Passer commande en ligne </h2>
-			<p> Choisi 5 boulettes et jusqu'à 3 accompagnements, livrés à la Plaza </p>
+			<p> Choisir 5 boulettes et jusqu'à 3 accompagnements, livrés à la Plaza </p>
 		</div>
 		
-		<div class="choix">
+		<div class="commande">
 			<form action="https://formspree.io/capucine.troalen@gmail.com" method="POST">
 			<fieldset class="boulettes">
 				<legend class="titleh2"> Boulettes </legend>
@@ -124,11 +124,11 @@
 				<legend class="titleh2"> Accompagnements </legend>
 				<p> Merci d'aller consulter la liste des les accompagnements disponibles aujourd'hui sur <a href="http://boulettesrestaurant.fr/commande-en-ligne/">cette page</a>. Ou alors me faire un tuto simple sur comment scraper un site et mettre ça proprement ici. Bisous. </p>
 				<label for="Accompagnement1"> Accompagnement 1 </label> <br>
-				<textarea name="othertopics" id="othertopics"></textarea>
+				<textarea name="accompagnement1" id="accompagnement1"></textarea>
 				<label for="Accompagnement1"> Accompagnement 2 </label> <br>
-				<textarea name="othertopics" id="othertopics"></textarea>
-				<label for="Accompagnement1"> Accompagnement 2 </label> <br>
-				<textarea name="othertopics" id="othertopics"></textarea>
+				<textarea name="accompagnement2" id="accompagnement2"></textarea>
+				<label for="Accompagnement3"> Accompagnement 3 </label> <br>
+				<textarea name="accompagnement3" id="accompagnement3"></textarea>
 			</fieldset>
 			<fieldset class="saudess">
 				<legend class="titleh2"> Sauces & Desserts </legend>
@@ -156,7 +156,10 @@
 							Non
 						</option>
 							</select> <br>
-							<input type="submit" value="Send" class="titleh2">
+							
+			</fieldset>
+			<fieldset class="submit">
+				<input type="submit" value="Send" class="titleh2">
 			</fieldset>
 				</form>
 		<footer>
