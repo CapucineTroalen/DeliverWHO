@@ -1,0 +1,86 @@
+/* General Styling : Wrapper, Titles */
+
+body {
+	background-color: #DADAE1;
+}
+.wrapper {
+	font-family: Dosis, serif;
+	color: #5a5a5a;
+	width: 90%;
+	margin: auto;
+}
+
+h1 {
+	font-family:'Yatra One', serif;
+	margin-top: 0;
+	margin: auto;
+	color: #DADAE1;
+	
+}
+
+.titleh2 {
+	color: #323232;
+	font-size: 1.7em;
+	font-weight: bold;
+	font-family:'Yatra One', serif;
+}
+
+header {
+	background-color: #37373a;
+	text-align: center;
+}
+
+/* Intro */
+
+.intro {
+	margin: auto;
+	text-align: center;
+}
+
+.intro h2 {
+	margin-bottom: 5px;
+}
+
+/* Form Styling */
+
+.commande label,
+.commande input,
+.commande select {
+	width: 100%;
+	border: none;
+}
+
+.commande input, 
+.commande select,
+.commande textarea {
+	background-color: #b2b2b6;
+	border: none;
+	border-radius: 5px;
+	height: 45px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.saudess input,
+.saudess label {
+	margin-bottom: 15px;
+}
+
+
+/* Commander Button */
+
+input[type="submit"] {
+	font-family: 'Yatra One', serif;
+	color: #DADAE1;
+	background-color: #16b89c;
+	display: block;
+	margin: 10px 0 0 0;
+	border-radius: 5px;
+	width: 100%;
+	padding: 7px;
+	border: 0
+}
+
+.submit {
+	border : none;
+}

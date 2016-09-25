@@ -19,6 +19,7 @@ h2 {
 	font-weight: bold;
 	font-family:'Yatra One', serif;
 }
+
 /* Top of the Page Styling */
 
 header {
@@ -51,15 +52,13 @@ header {
 	margin: 10px 0;
 }
 
-.submit {
-	border : none;
-}
 
 /* Form Boxes styling */ 
+
 .commande label,
 .commande input,
 .commande select {
-	display: block;
+	
 	width: 100%;
 	border: none;
 }
@@ -86,22 +85,24 @@ header {
 }
 
 
-#accompagnement1, #accompagnement2, #accompagnement3  {
+#accompagnement1, #accompagnement2, #accompagnement3, #tonnom {
 	width: 100%;
-	height: 100px;
+	height: 45px;
 	border: 0;
 	margin-top: -10px;
 }
 
-
 /* Submit Button styling */
 
+.submit {
+	border : none;
+	margin: auto;
+}
 input[type="submit"] {
 	font-family: 'Yatra One', serif;
 	color: #fff;
 	background-color: #16b89c;
 	display: block;
-	margin : auto;
 	margin: 10px 0 0 0;
 	border-radius: 5px;
 	width: 100%;
@@ -114,10 +115,10 @@ input[type="submit"] {
 @media (min-width: 760px) {
 	.wrapper {
 		width: 80%;
+		font-size: 1em;
 	}
 	
-	.main-content,
-	.newsletter {
+	.commande {
 		width: 100%;
 	}
 	
@@ -127,6 +128,7 @@ input[type="submit"] {
 		display: inline-block;
 		margin-bottom: 30px;
 	}
+
 	
 	.commande label {
 		width : 16%;
@@ -135,13 +137,7 @@ input[type="submit"] {
 	.commande input, 
 	.commande select
 		{
-			width: 82%;
 			margin: auto;
 		}
-		
-	input[type="submit"] {
-		margin-top: 20px;
-		width: 100%;
-	}
 	 
 }

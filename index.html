@@ -5,7 +5,8 @@
 	     <title> DeliverWHO </title>
 	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	     <link rel="stylesheet" href="css/normalize.css">
-	     <link rel="stylesheet" href="css/main.css">
+	     <!-- <link rel="stylesheet" href="css/main.css"> -->
+		 <link rel="stylesheet" href="css/main2.css">
 		 <link href="https://fonts.googleapis.com/css?family=Dosis|Yatra+One" rel="stylesheet">
 	</head>
 <body>
@@ -14,14 +15,18 @@
 			<h1>Deliver-WHO ?</h1>
 		</header>
 		
-		<div class="wrapper maincontent">
+		<div class="wrapper">
 		<div class="intro">
-			<h2> Passer commande en ligne </h2>
+			<h2 class="titleh2"> Passer commande en ligne </h2>
 			<p> Choisir 5 boulettes et jusqu'à 3 accompagnements, livrés à la Plaza </p>
 		</div>
 		
 		<div class="commande">
 			<form action="https://formspree.io/capucine.troalen@gmail.com" method="POST">
+			<fieldset class="tonnom">
+				<legend class="titleh2"> Ton nom </legend>
+				<textarea name="tonnom" id="tonnom"></textarea>
+			</fieldset>
 			<fieldset class="boulettes">
 				<legend class="titleh2"> Boulettes </legend>
 				<label for="boulette1"> Boulette 1 </label>
@@ -122,22 +127,22 @@
 			</fieldset>
 			<fieldset class="accompagnement">
 				<legend class="titleh2"> Accompagnements </legend>
-				<p> Merci d'aller consulter la liste des les accompagnements disponibles aujourd'hui sur <a href="http://boulettesrestaurant.fr/commande-en-ligne/">cette page</a>. Ou alors me faire un tuto simple sur comment scraper un site et mettre ça proprement ici. Bisous. </p>
+				<p> Merci d'aller consulter la liste des les accompagnements disponibles aujourd'hui sur <a href="http://boulettesrestaurant.fr/commande-en-ligne/">cette page</a>. <i>Ou alors me faire un tuto simple sur comment scraper un site et mettre ça proprement ici. Bisous.</i> </p>
 				<label for="Accompagnement1"> Accompagnement 1 </label> <br>
-				<textarea name="accompagnement1" id="accompagnement1"></textarea>
+				<textarea name="accompagnement1" id="accompagnement1"></textarea> <br>
 				<label for="Accompagnement1"> Accompagnement 2 </label> <br>
-				<textarea name="accompagnement2" id="accompagnement2"></textarea>
+				<textarea name="accompagnement2" id="accompagnement2"></textarea> <br>
 				<label for="Accompagnement3"> Accompagnement 3 </label> <br>
-				<textarea name="accompagnement3" id="accompagnement3"></textarea>
+				<textarea name="accompagnement3" id="accompagnement3"></textarea> <br>
 			</fieldset>
 			<fieldset class="saudess">
 				<legend class="titleh2"> Sauces & Desserts </legend>
-				<label for="state"> Je veux de la sauce béarnaise </label>
-					<input type="radio" id="=SauceOui" name="sauce">
-					<label for="htmlF"> Oui  </label> <br>
-					<input type="radio" id="SauceNob" name="sauce">
-					<label for="plain"> Non </label> <br>
-				<label for="state"> Je veux un dessert </label>
+				<p> Je veux de la sauce béarnaise <p> <br>
+					<label for="SauceOui"> Oui  </label>
+					<input type="radio" id="SauceOui" name="sauce">
+					<label for="SauceNon"> Non </label>
+					<input type="radio" id="SauceNon" name="sauce">
+					<p> Je veux un dessert <p>
 						<select id="dessert"> 
 					<option selected="selected" id="placeholder"> Dessert </option>
 						<option value="Cake">
@@ -159,7 +164,7 @@
 							
 			</fieldset>
 			<fieldset class="submit">
-				<input type="submit" value="Send" class="titleh2">
+				<input type="submit" value="Commander" class="titleh2">
 			</fieldset>
 				</form>
 		<footer>
